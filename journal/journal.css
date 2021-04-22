@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Emblema One";
     src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"),
-	 url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff");
+         url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff");
 }
 
 body {
@@ -27,4 +27,53 @@ h1, h2 {
 blockquote {
     font-style: italic;
     text-decoration: line-through;
+}
+
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: thin solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+td, th {
+    border: thin dotted gray;
+    padding: 5px;
+}
+
+caption {
+    font-style: italic;
+    padding-top: 8px;
+}
+
+td.date, td.temperature, td.rating {
+    text-align: center;
+}
+
+td.altitude, td.population {
+    text-align: right;
+}
+
+th {
+    background-color: #cc6600;
+}
+
+/*
+tr:nth-child(odd) {
+    background-color: #fcba7a;
+}*/
+
+.cellcolor {
+    background-color: #fcba7a;
+}
+
+table table th {
+    background-color: white;
+}
+
+li {
+    list-style-image: url(images/backpack.gif);
+    padding-top: 5px;
+    margin-left: 20px;
 }
